@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  bottom: -24px;
+}
+
+.score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+
+  z-index: 10;
+}
+
+.introduction {
+  width: 270px;
+  height: 150px;
+  right: 70px;
+    top: 40px;
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 2s;
+
+  z-index: 10;
+}
+
+.restart {
+  padding: 12px 20px;
+  top: 28px;
+  right: 90px;
+  position: absolute;
+  border-radius: 999px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(245, 46, 46);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.perfect {
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 90px;
+  opacity: 0;
+  transition: opacity 2s;
+  z-index: 10;
+}

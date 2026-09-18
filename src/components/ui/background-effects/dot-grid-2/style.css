@@ -1,0 +1,36 @@
+/* Grid container */
+.grid2 {
+  display: grid;
+  position: fixed;
+  /* z-index: -1; */
+  direction: ltr;
+}
+
+.grid2 *{
+  direction: ltr;
+}
+
+
+.w-fit {
+  width: fit-content;
+}
+
+
+.dot-wrapper {
+  padding: 1rem; 
+  transition: background-color 0.2s ease;
+}
+
+
+
+
+/* Inner dot */
+.dot-point {
+  width: 0.2rem;  
+  aspect-ratio: 1;
+  border-radius: 9999px; 
+  will-change: transform, opacity;
+  background: linear-gradient(to bottom, #334155, #94a3b8);
+  opacity: 0;
+}
+

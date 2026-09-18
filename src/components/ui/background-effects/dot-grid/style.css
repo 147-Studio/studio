@@ -1,0 +1,36 @@
+/* Grid container */
+.grid {
+  display: grid;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+
+.dot-wrapper {
+ 
+  border-radius: 9999px; /* rounded-full */
+  padding: 0.5rem; /* p-2 */
+  transition: background-color 0.2s ease;
+}
+
+/* hover:bg-slate-600 */
+.dot-wrapper:hover {
+  background-color: #475569; /* slate-600 */
+}
+
+/* Inner dot */
+.dot-point {
+    width: 0.3rem;  
+    aspect-ratio: 1;
+  border-radius: 9999px; 
+ will-change: transform, opacity;
+  background: linear-gradient(to bottom, #334155, #94a3b8);
+  opacity: 0.5;
+}
+
+/* group-hover effects */
+.dot-wrapper:hover .dot-point {
+  background: linear-gradient(to bottom, #4f46e5, #ffffff); /* indigo-600 → white */
+}

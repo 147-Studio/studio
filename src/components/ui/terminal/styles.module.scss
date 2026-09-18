@@ -1,0 +1,17 @@
+.window {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 50;
+  color: white;
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rem;
+}
+
+.window * {
+  direction: ltr;
+}

@@ -1,0 +1,33 @@
+.group {
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.group1 {
+  grid-template-columns: 1fr 1fr 1fr 1.2fr 1fr;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.group2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.group2 img {
+  scale: 0;
+  z-index: 0;
+}
+
+.group img {
+  width: 100%;
+  height: 100%;
+}

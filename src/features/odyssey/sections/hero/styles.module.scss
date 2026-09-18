@@ -1,0 +1,128 @@
+.container {
+  height: max-content;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-top: 14rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  @media (max-width: 767px) {
+    padding-top: 7rem;
+  }
+
+  .title_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+
+    .title {
+      font-size: 44px;
+      font-weight: 600;
+      @media (max-width: 767px) {
+        font-size: 28px;
+      }
+    }
+
+    .project {
+      position: absolute;
+      scale: 0.8;
+      top: -44px;
+      left: -1%;
+      @media (max-width: 767px) {
+        scale: 0.6;
+        left: -5%;
+      }
+    }
+
+    .figma {
+      position: absolute;
+      top: -76px;
+      scale: 0.75;
+    }
+  }
+
+  .subtitle {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: normal;
+    direction: rtl;
+    text-align: center;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      display: none;
+    }
+  }
+
+  .subtitle_mobile {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: normal;
+    direction: rtl;
+    text-align: center;
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .icongroup_wrapper {
+    position: relative;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    margin-top: 20px;
+    @media (max-width: 767px) {
+      height: 384px;
+      width: 90%;
+    }
+  }
+}
+
+// .register{
+//         position: relative;
+//         display: flex;
+//         gap: 6px;
+//         background:
+//             linear-gradient( rgba(33,33,33,0.9)),
+//             url("/assets/svg/noise.svg");
+
+//         color: white;
+//         padding: 14px 28px;
+//         border-radius: 100px;
+//         transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+//     }
+
+//     .register:hover::before {
+//         content: "";
+//         position: absolute;
+//         inset: 0;
+//         border-radius: inherit;
+
+//         padding: 2px; /* 👈 stroke thickness */
+
+//         background: linear-gradient(0, transparent , #FFFFFF );
+//         opacity: .6;
+
+//         /* MAGIC */
+//         -webkit-mask:
+//             linear-gradient(#fff 0 0) content-box,
+//             linear-gradient(#fff 0 0);
+
+//         -webkit-mask-composite: xor;
+//         mask-composite: exclude;
+
+//         pointer-events: none;
+//         }
+
+//     .register:hover{
+//         background: linear-gradient( 45deg , rgba(252, 149, 236,0.9) , rgba(209, 112, 244,0.9) , rgba(167, 77, 252,0.9) ,  rgba(178, 64, 255,0.9)) , url("/assets/svg/noise.svg");;
+//         img {
+//             content: url("/assets/svg/crown2.svg")
+//         }
+//     }

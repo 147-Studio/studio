@@ -1,0 +1,11 @@
+.preview_main{
+    position: relative;
+   
+    transform: translateZ(0);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.preview_media{
+    scale: 1.05;
+}
