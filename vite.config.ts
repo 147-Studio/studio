@@ -7,6 +7,7 @@ import obfuscator from "vite-plugin-javascript-obfuscator";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), svgr()],
+  base: "/",
   resolve: {
     alias: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
   },
